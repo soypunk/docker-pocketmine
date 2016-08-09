@@ -19,7 +19,8 @@ fi
 chown -R minecraft:minecraft /data
 
 # install pocketmine
-sudo -E -u minecraft ./install.sh -v development
+#sudo -E -u minecraft ./install.sh -v development
+sudo -E -u minecraft ./install.sh
 
 # start pocketmine
 exec sudo -E -u minecraft PHP_BINARY=/data/bin/php5/bin/php ./start.sh
